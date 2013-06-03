@@ -1,0 +1,52 @@
+package pkEasyBarCode;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vclx,
+  vcl,
+  vclimg,
+  fs16,
+  frx16;
+
+contains
+  untEasyBarcod in 'untEasyBarcod.pas',
+  untEasyBarCode2 in 'untEasyBarCode2.pas',
+  untEasyDataMatrix in 'untEasyDataMatrix.pas',
+  untEasyECC200 in 'untEasyECC200.pas',
+  untEasyQRCode in 'untEasyQRCode.pas',
+  untEasyReedSolomon in 'untEasyReedSolomon.pas',
+  untEasyfrxQRCode in 'untEasyfrxQRCode.pas',
+  untEasyfrxQRCodeRTTI in 'untEasyfrxQRCodeRTTI.pas',
+  untEasyfrxPDF417Code in 'untEasyfrxPDF417Code.pas',
+  untEasyfrxPDF417CodeRTTI in 'untEasyfrxPDF417CodeRTTI.pas',
+  untEasyfrxMaxiCode in 'untEasyfrxMaxiCode.pas',
+  untEasyfrxMaxiCodeRTTI in 'untEasyfrxMaxiCodeRTTI.pas';
+
+end.
